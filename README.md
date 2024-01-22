@@ -1,2 +1,2 @@
 # WorkiFy
-App to find Bhai-mar
+App to find workers

@@ -2,7 +2,7 @@
 # See https://dart.dev/tools/pub/glossary#lockfile
 packages:
   animated_splash_screen:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: animated_splash_screen
       sha256: f6c06a30446bf06d6e912e307304e9e3a599bf89cae6faecdb0962f30c9739c4

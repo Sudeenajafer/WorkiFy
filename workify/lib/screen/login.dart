@@ -1,25 +1,17 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
+class Myloginpage extends StatefulWidget {
+  const Myloginpage({super.key});
 
-
-class splash extends StatefulWidget {
 
   @override
-  State<splash> createState() => _splashState();
+  State<Myloginpage> createState() => _MyloginpageState();
 }
 
-class _splashState extends State<splash> {
+class _MyloginpageState extends State<Myloginpage> {
   @override
-  void initState(){
-    super.initState();
-    // _navigatetohome();
-  }
 
-  _navigatetohome()async{
-    await Future.delayed(Duration(milliseconds: 1500), () {});
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>loginpage()));
-  }
+
+
 
   @override
   Widget build(BuildContext context) {

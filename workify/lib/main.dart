@@ -1,9 +1,5 @@
-import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
-
-//com.flutterflow.homeU
-
-import 'screen/login.dart';
+import 'screen/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,15 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: AnimatedSplashScreen(
-          splash: const Image(
-              image:NetworkImage('https://content.presentermedia.com/content/clipart/00002000/2823/looking_though_binoculars_pc_800_wht.jpg')),
-          duration: 5000,
-          splashTransition: SplashTransition.fadeTransition,
-          backgroundColor: Colors.white60,
-          nextScreen: Myloginpage(),
-
-        )
+        routes: {
+          '/': (context) => Mysplash(),
+        }
     );
   }
 }

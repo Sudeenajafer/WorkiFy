@@ -6,9 +6,8 @@ import 'package:firebase_signin/screens/signup_screen.dart';
 import 'package:firebase_signin/utils/color_utils.dart';
 import 'package:flutter/material.dart';
 import 'home.dart';
-import 'singup.dart';
 import 'resetpassword.dart';
-
+import 'singup.dart';
 
 
 class SignInScreen extends StatefulWidget {
@@ -61,7 +60,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       password: _passwordTextController.text)
                       .then((value) {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => HomeScreen()));
+                        MaterialPageRoute(builder: (context) => Homepage()));
                   }).onError((error, stackTrace) {
                     print("Error ${error.toString()}");
                   });

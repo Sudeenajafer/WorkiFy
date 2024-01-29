@@ -40,7 +40,7 @@ class _MysplashState extends State<Mysplash> {
       onPressed: () {
       Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const Myloginpage()),
+      MaterialPageRoute(builder: (context) => const SignInScreen()),
       );
      }
     ),

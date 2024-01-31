@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'search.dart';
+import 'splash.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -14,13 +16,38 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text('WorkiFy'),
       ),
-      body: Center(
-        child: Text("Search Here"),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children:  <Widget>[
+            const UserAccountsDrawerHeader(
+              accountName: Text('User Name'),
+              accountEmail: Text('user@example.com'),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: Colors.blue,
+                child: Text('U'),
+              ),
+            ),
+            ListTile(
+              leading: const Icon(Icons.account_circle),
+              title: const Text('Profile'),
+            ),
+            ListTile(
+              leading: const Icon(Icons.settings),
+              title: const Text('Settings'),
+            ),
+              ListTile(
+                leading: const Icon(Icons.logout),
+                title: const Text('Log Out'),
+              ),          ],
+        ),
       ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.search),
-        onPressed: () => showSearch(context: context, delegate: Search()),
-      ),
+      //body:
+     // floatingActionButton: FloatingActionButton(
+       // child: Icon(Icons.search),
+       // onPressed: () => showSearch(context: context, delegate: Search()),
+      //),
+
     );
   }
 }

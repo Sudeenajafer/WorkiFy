@@ -12,11 +12,20 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('WorkiFy'),
+        title: Text("WorkiFy"),
       ),
-      body: Center(
-        child: Text("Search Here"),
-      ),
+      body: Container(
+          width: 200.0,
+          height: 200.0,
+          color: Colors.blue,
+          child: Text(
+            'Hello, Flutter!',
+            style: TextStyle(
+              fontSize: 18.0,
+              color: Colors.white,
+            ),
+          ),
+        ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.search),
         onPressed: () => showSearch(context: context, delegate: Search()),

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "489442089877",
+    "project_id": "login-9324d",
+    "storage_bucket": "login-9324d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489442089877:android:37d9dc2af65c607d44f49c",
+        "android_client_info": {
+          "package_name": "com.example.workify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCidjczmZs7FzL-_5IEDJskUy6xqifj02k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

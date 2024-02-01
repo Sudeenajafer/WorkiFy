@@ -54,6 +54,13 @@ class _LoginPageState extends State<LoginPage> {
                   // For simplicity, just print the credentials
                   print('Username: $_username');
                   print('Password: $_password');
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('login successfully',style: TextStyle(fontSize: 24)),
+                      backgroundColor: Colors.grey,
+                      duration: Duration(seconds: 2),
+                    ),
+                  );
                   _navigateToHomePage();
                 } else {
                   // Show an error message if fields are empty

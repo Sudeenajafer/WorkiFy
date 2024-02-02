@@ -42,7 +42,18 @@ class _HomePageState extends State<HomePage> {
               ),          ],
         ),
       ),
-      //body:
+        body:Container(
+          height: 240.0,
+          width: 240.0,
+          color: Colors.blue[50],
+          child: Align(
+            alignment: Alignment.center,
+            child: Text(
+              "Geeky Text",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+        )
      // floatingActionButton: FloatingActionButton(
        // child: Icon(Icons.search),
        // onPressed: () => showSearch(context: context, delegate: Search()),

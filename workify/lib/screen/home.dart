@@ -15,10 +15,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.teal[900],
       appBar: AppBar(
-        title: Text('WorkiFy',
-          style: TextStyle(
-          fontFamily: 'Pacifico',),
+        title: Text('WorkiFy'),
       ),
       drawer: Drawer(
         child: ListView(
@@ -52,17 +51,13 @@ class _HomePageState extends State<HomePage> {
         items: [
         //1st Image of Slider
           Container(
-            height: 240.0,
-            width: double.infinity,
-            color: Colors.blue[50],
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "Driver",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-              ],
+            margin: EdgeInsets.all(6.0),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8.0),
+              image: DecorationImage(
+                image: NetworkImage("https://c8.alamy.com/comp/PCYW3A/happy-male-driver-rides-car-driving-trip-taxi-concept-cartoon-vector-illustration-PCYW3A.jpg"),
+                fit: BoxFit.cover,
+              ),
             ),
           ),
 
@@ -70,16 +65,14 @@ class _HomePageState extends State<HomePage> {
 
           //2nd Image of Slider
     Container(
-    height: 240.0,
-      width: double.infinity, // Set the width to fill the available space
-    color: Colors.blue[50],
-    child: Align(
-    alignment: Alignment.center,
-    child: Text(
-    "Data Entry or Virtual Assistant",
-    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-    ),
-    ),
+      margin: EdgeInsets.all(6.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(8.0),
+        image: DecorationImage(
+          image: NetworkImage("ADD IMAGE URL HERE"),
+          fit: BoxFit.cover,
+        ),
+      ),
     ),
 
     //3rd Image of Slider
@@ -134,7 +127,7 @@ class _HomePageState extends State<HomePage> {
     aspectRatio: 16 / 9,
     autoPlayCurve: Curves.fastOutSlowIn,
     enableInfiniteScroll: true,
-    autoPlayAnimationDuration: Duration(milliseconds: 800),
+    autoPlayAnimationDuration: Duration(milliseconds: 500),
     viewportFraction: 0.8,
     ),
     ),
@@ -144,6 +137,7 @@ class _HomePageState extends State<HomePage> {
         child: Icon(Icons.search),
         onPressed: () => showSearch(context: context, delegate: Search()),
       ),
+
     );
   }
 }

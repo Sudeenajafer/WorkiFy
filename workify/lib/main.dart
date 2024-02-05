@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'screen/splash.dart';
+import 'package:get/get.dart';
 
 
-void main() {
+void main(){
+  WidgetFlutterBinding.ensureInitialised();
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
@@ -12,9 +14,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        routes: {
-          '/': (context) => Mysplash(),
-        }
+       home: futureBuilder(
+         builder: (context, dataSnapShot){
+           return Mysplash();
+         }
+       )
+       // routes: {
+         // '/': (context) => Mysplash(),
+        //}
     );
   }
 }

@@ -69,7 +69,7 @@ class _HomePageState extends State<HomePage> {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8.0),
         image: DecorationImage(
-          image: NetworkImage("ADD IMAGE URL HERE"),
+          image: NetworkImage("https://i.ytimg.com/vi/WX1sjky1u6Y/maxresdefault.jpg"),
           fit: BoxFit.cover,
         ),
       ),

@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8.0),
               image: DecorationImage(
-                image: NetworkImage("https://c8.alamy.com/comp/PCYW3A/happy-male-driver-rides-car-driving-trip-taxi-concept-cartoon-vector-illustration-PCYW3A.jpg"),
+                image: NetworkImage("https://c8.alamy.com/comp/PCYW3A/happy-male-driver-rides-cardriving--trip-taxi-concept-cartoon-vector-illustration-PCYW3A.jpg"),
                 fit: BoxFit.cover,
               ),
             ),

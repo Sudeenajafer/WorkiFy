@@ -69,7 +69,7 @@ class _HomePageState extends State<HomePage> {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8.0),
         image: DecorationImage(
-          image: NetworkImage("https://i.ytimg.com/vi/WX1sjky1u6Y/maxresdefault.jpg"),
+          image: NetworkImage("https://img.freepik.com/premium-vector/chef-preparing-food-kitchen-vector-illustration-flat-style_444663-995.jpg"),
           fit: BoxFit.cover,
         ),
       ),
@@ -77,44 +77,39 @@ class _HomePageState extends State<HomePage> {
 
     //3rd Image of Slider
     Container(
-    height: 240.0,
-      width: double.infinity, // Set the width to fill the available space
-    color: Colors.blue[50],
-    child: Align(
-    alignment: Alignment.center,
-    child: Text(
-    "Babysitter",
-    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-    ),
-    ),
+      margin: EdgeInsets.all(6.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(8.0),
+        image: DecorationImage(
+          image: NetworkImage("https://th.bing.com/th/id/OIP.MJy1DHUUUFFdSPags14VNQHaFN?rs=1&pid=ImgDetMain"),
+          fit: BoxFit.cover,
+        ),
+      ),
     ),
 
     //4th Image of Slider
     Container(
-    height: 240.0,
-      width: double.infinity, // Set the width to fill the available space
-    color: Colors.blue[50],
-    child: Align(
-    alignment: Alignment.center,
-    child: Text(
-    "Cook",
-    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-    ),
-    ),
+      margin: EdgeInsets.all(6.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(8.0),
+        image: DecorationImage(
+          image: NetworkImage("https://th.bing.com/th/id/OIP.zUIe_mjeerAZ46R5I8EM-wHaFP?rs=1&pid=ImgDetMain"),
+          fit: BoxFit.cover,
+        ),
+      ),
+
     ),
 
     //5th Image of Slider
     Container(
-    height: 240.0,
-      width: double.infinity, // Set the width to fill the available space
-    color: Colors.blue[50],
-    child: Align(
-    alignment: Alignment.center,
-    child: Text(
-    "Tutoring",
-    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-    ),
-    ),
+      margin: EdgeInsets.all(6.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(8.0),
+        image: DecorationImage(
+          image: NetworkImage("https://image.freepik.com/free-vector/professional-worker-fixing-bathroom_23-2148656904.jpg"),
+          fit: BoxFit.cover,
+        ),
+      ),
     ),
 
     ],

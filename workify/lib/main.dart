@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sqflite/sqflite.dart';
 import 'screen/splash.dart';
 // import 'package:get/get.dart';
 

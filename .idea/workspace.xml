@@ -27,7 +27,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -54,7 +54,8 @@
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/asus/OneDrive/Desktop/workify",
+    "io.flutter.reload.alreadyRun": "true",
+    "last_opened_file_path": "C:/Users/asus/Music/WorkiFy",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>

@@ -15,19 +15,19 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.teal[900],
       appBar: AppBar(
-        title: const Text('WorkiFy',
-        style: TextStyle(color: Colors.black),),
+        title: const Text('WorkiFy'),
+       // style: TextStyle(color: Colors.black),
         centerTitle: true,
         elevation: 0.0,
         backgroundColor: Colors.grey,
-        leading: IconButton(
-          icon: const Icon(
-            Icons.notifications_none,
-            color: Colors.black,
-          ),
-          onPressed: () {  },
-        ),
-      ),
+      //   leading: IconButton(
+      //     icon: const Icon(
+      //       Icons.notifications_none,
+      //       color: Colors.black,
+      //     ),
+      //     onPressed: () {  },
+      //   ),
+       ),
 
       drawer: Drawer(
         child: ListView(
@@ -59,6 +59,7 @@ class _HomePageState extends State<HomePage> {
 
         children: [
       ListView(
+
             children: [
           CarouselSlider(
           items: [
@@ -82,7 +83,7 @@ class _HomePageState extends State<HomePage> {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8.0),
           image: const DecorationImage(
-            image: NetworkImage("https://img.freepik.com/premium-vector/chef-preparing-food-kitchen-vector-illustration-flat-style_444663-995.jpg"),
+            image: NetworkImage("https://c8.alamy.com/comp/PCYW3A/happy-male-driver-rides-cardriving--trip-taxi-concept-cartoon-vector-illustration-PCYW3A.jpg"),
             fit: BoxFit.cover,
           ),
         ),
